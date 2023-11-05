@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   hello world!
+  
+ 
+ <script>
+    
+  let p1= new Promise((resolve,reject)=>{
+    let num=prompt("enter the number betn 1-9");
+    if(num==5){
+        resolve(num);
+    }
+    else{
+        reject(new Error("number is not found"));
+    }
+  })
+
+  p1.then((num)=>{
+    console.log("number is :"+num);
+  }).catch(error=>{
+    console.log(error);
+  })
+
+ </script>
+
+   
+</body>
+</html>
